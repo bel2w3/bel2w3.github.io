@@ -4,14 +4,14 @@ body {
 
 h1 {
   color: #f6f7eb;
-  font-size: 64px;
+  font-size: 88px;
   font-family : 'Body Grotesque Large', sans-serif;
 }
 
 h3 {
   color: #f6f7eb;
   font-size: 24px;
-  font-family : 'Poppins', sans-serif;
+  font-family : 'Outfit', sans-serif;
 }
 
 p {
@@ -31,7 +31,7 @@ a {
   color: #f6f7eb;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  border-radius: 3px;
+  border-radius: 26px;
   display: inline-block;
   text-decoration: none;
   transition: 0.3s ease;
@@ -42,4 +42,18 @@ a {
 a:hover {
   background-color: #f6f7eb;
   color: #0b4f6c;
+}
+
+d1 {
+  color: #f6f7eb;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+dd {
+  font-weight: bold;
+  font-size: 18px;
+  color: #f6f7eb;
+  font-family : 'Poppins', sans-serif;
+  margin-bottom: 5px;
+ 
 }
