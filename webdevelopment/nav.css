@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    background-color: #261d0c;
+}
+
+nav {
+    margin-left: 20px;
+    color: #f6f7eb;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 15px;
+}
+
+nav ul li {
+display: block;
+margin-left: 0px 20px
+}
+
+nav ul li a {
+    color: #f6f7eb;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 26px;
+}
+nav ul li a:hover {
+    color: #0b4f6c;
+    text-decoration: underline;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
