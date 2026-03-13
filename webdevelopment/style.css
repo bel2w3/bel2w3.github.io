@@ -5,32 +5,34 @@ body {
 h1 {
   color: #f6f7eb;
   font-size: 88px;
-  font-family : 'Body Grotesque Large', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 0%;
 }
+
 
 h3 {
   color: #f6f7eb;
   font-size: 24px;
-  font-family : 'Outfit', sans-serif;
+  font-family : 'Georgia', 'Times New Roman', Times, serif;
 }
 
 p {
   color: #f6f7eb;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 blockquote {
   color: #f6f7eb;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 a {
   background-color: #0b4f6c;
   color: #f6f7eb;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Oswald', sans-serif;
   border-radius: 26px;
   display: inline-block;
   text-decoration: none;
@@ -41,19 +43,20 @@ a {
 
 a:hover {
   background-color: #f6f7eb;
-  color: #0b4f6c;
+  color: #261d0c;
 }
 
 d1 {
   color: #f6f7eb;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Oswald', sans-serif;
+} 
+
 dd {
   font-weight: bold;
   font-size: 18px;
   color: #f6f7eb;
-  font-family : 'Poppins', sans-serif;
+  font-family : 'Georgia', 'Times New Roman', Times, serif;
   margin-bottom: 5px;
- 
 }
+
