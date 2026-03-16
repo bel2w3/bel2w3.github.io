@@ -9,6 +9,13 @@ h1 {
   margin-top: 0%;
 }
 
+footer {
+  color: #f6f7eb;
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 270px;
+}
 
 h3 {
   color: #f6f7eb;
@@ -60,3 +67,7 @@ dd {
   margin-bottom: 5px;
 }
 
+p::first-letter {
+  font-size: 150%;
+  color: #0b4f6c;
+} 

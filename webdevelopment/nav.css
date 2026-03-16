@@ -40,3 +40,39 @@ img {
   height: 100px;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30;
+    background-color: #261d0c;
+    padding: 5px 0;
+    border-radius: 26px;
+    min-width: 160px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.dropdown-menu li {
+    text-align: center;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-style: italic;
+    border-radius: 0%;
+    color: #f6f7eb;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color:#f6f7eb;
+    color: #261d0c;
+}
