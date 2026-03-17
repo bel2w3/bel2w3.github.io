@@ -67,7 +67,7 @@ dd {
   margin-bottom: 5px;
 }
 
-p::first-letter {
+p:first-of-type::first-letter {
   font-size: 150%;
   color: #0b4f6c;
 } 
