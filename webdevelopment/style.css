@@ -167,3 +167,29 @@ video {
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
 }
+
+.footer-icon {
+  width: 22px;
+  height: auto;
+  margin: auto;
+vertical-align : middle;
+
+ }
+
+.footer-icon:hover {
+  opacity: 0.6;
+  color:#0b4f6c;
+}
+
+.icon-container {
+  display: inline-block;
+vertical-align: middle;
+}
+
+.contact-item {
+  display: inline-block;
+  margin: 10px 15px;
+  color:#f6f7eb;
+  font-family: 'oswald', sans-serif;
+  font-size: 16px;
+}
