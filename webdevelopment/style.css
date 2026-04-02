@@ -193,3 +193,35 @@ vertical-align: middle;
   font-family: 'oswald', sans-serif;
   font-size: 16px;
 }
+
+@media print {
+    .profile-arch-container, .profile-photo, header, nav, img, video, .button {
+        display: none !important;
+    }
+
+    * {
+        color: #000000 !important;
+        background: none !important;
+        background-color: white !important;
+        box-shadow: none !important; 
+        text-shadow: none !important;
+    }
+
+    html, body, main, section, div, h1, h3, p, ul, ol, li, dl, dt, dd, footer {
+        display: block !important;
+        font-family: "Times New Roman", Georgia, serif !important;
+        visibility: visible !important;
+    }
+
+    @page {
+        margin: 10mm;
+    }
+
+    footer {
+        display: block !important;
+        margin-top: 50px;
+        border-top: 1px solid #000;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
