@@ -225,3 +225,154 @@ vertical-align: middle;
         padding-top: 10px;
     }
 }
+
+.contact-block {
+  background-color:#261d0c
+  color:#f6f7eb
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px
+}
+
+.contact-header {
+  font-family: oswald, sans-serif;
+  font-size: 4rem
+  font-weight: bold;
+  letter-spacing: 0.2em
+  text-transform:: uppercase;
+  text-align left;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}
+
+.split-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  color: #f6f7eb;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.contact-main-wrapper {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* THE LEFT SIDE: This keeps your bars from crossing the middle of the screen */
+.contact-form-side {
+  flex: 1; 
+  background-color: #261d0c;
+  padding: 60px; /* This gives the bars "room to breathe" from the edges */
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px #0b4f6c solid;
+  color: #f6f7eb;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(246, 247, 235, 0.5);
+  font-style:italic;
+  font-size: small;
+} 
+
+.submit-button {
+  align-self: center; 
+  background-color: #0b4f6c;
+  color: #f6f7eb;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 15px 50px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;  
+}
+
+.submit-button:hover {
+  background-color: #f6f7eb;
+  color: #261d0c;
+}
+
+.split-fields {
+  display: flex;
+  gap: 20px;   /* This creates the gap between the two bars */
+  width: 100%; /* Keeps them contained */
+}
+
+.split-fields .form-group {
+  flex: 1;
+}
+
+label::after {
+  content: " *";
+  color: #0b4f6c; /* Using your teal accent color */
+  font-weight: bold;
+}
+
+/* --- VISUAL VALIDATION --- */
+
+/* Highlights the bar with your teal accent color only if it's empty/invalid on submit */
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border: 2px solid #0b4f6c;
+}
+
+/* Subtle focus state so users know which bar they are in without shifting layout */
+input:focus, 
+select:focus, 
+textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #f6f7eb;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+
+@media (max-width: 768px) {
+  .contact-main-wrapper {
+    flex-direction: column; /* Stacks the blue side and form side vertically */
+  }
+
+  .contact-form-side, .contact-image-side {
+    width: 100%;
+    flex: none;
+    padding: 30px; /* Reduces padding for smaller screens */
+  }
+
+  h1.title-back {
+    font-size: 48px; /* Scales down the large header for mobile */
+  }
+
+  .contact-form {
+    max-width: 100%; /* Allows bars to use full width on phone */
+  }
+}
