@@ -20,7 +20,7 @@ figure {
 
 main {
   gap: 80px;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 60px auto;
   padding: 0 40px;
 }
@@ -33,10 +33,11 @@ main {
 
 h1 {
   color: #f6f7eb;
-  font-size: 88px;
+  font-size: 95px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 0;
   margin-bottom: 20px;
+  padding-left: 5%;
 }
 
 h3 {
@@ -55,7 +56,7 @@ p {
   margin-bottom: 20px;
 }
 
-about-text {
+.about-text {
   color: #f6f7eb;
   font-size: 18px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -106,9 +107,20 @@ dd {
   margin-bottom: 5px;
 }
 
-p:first-of-type::first-letter {
-  font-size: 170%;
-  color: #0b4f6c;
+.personal-background p:first-of-type::first-letter {
+    color: #0b4f6c;
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 10px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.reflection-container p::first-letter {
+    color: #0b4f6c;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 p ~ p {
@@ -135,9 +147,19 @@ video {
   border: 4px solid #f6f7eb
 }
 
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    max-width: 400px;
+}
+
 .profile-arch-container {
     width: 100%;
     max-width: 400px;
+    height: auto;
+    overflow: visible;
     aspect-ratio: 4 / 5; 
     border-radius: 200px 200px 0 0; 
     overflow: hidden;
@@ -159,13 +181,6 @@ video {
     height: 100%;
     object-fit: cover; 
     display: block;
-}
-
-.education-section {
-    background-color: #fdfaf5; 
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
 }
 
 .footer-icon {
@@ -192,6 +207,18 @@ vertical-align: middle;
   color:#f6f7eb;
   font-family: 'oswald', sans-serif;
   font-size: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 @media print {
@@ -235,7 +262,7 @@ vertical-align: middle;
 }
 
 .contact-header {
-  font-family: oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 4rem
   font-weight: bold;
   letter-spacing: 0.2em
@@ -276,11 +303,10 @@ label {
   min-height: 100vh;
 }
 
-/* THE LEFT SIDE: This keeps your bars from crossing the middle of the screen */
 .contact-form-side {
   flex: 1; 
   background-color: #261d0c;
-  padding: 60px; /* This gives the bars "room to breathe" from the edges */
+  padding: 60px; 
   display: flex;
   flex-direction: column;
 }
@@ -323,8 +349,8 @@ input::placeholder, textarea::placeholder {
 
 .split-fields {
   display: flex;
-  gap: 20px;   /* This creates the gap between the two bars */
-  width: 100%; /* Keeps them contained */
+  gap: 20px; 
+  width: 100%; 
 }
 
 .split-fields .form-group {
@@ -333,20 +359,18 @@ input::placeholder, textarea::placeholder {
 
 label::after {
   content: " *";
-  color: #0b4f6c; /* Using your teal accent color */
+  color: #0b4f6c; 
   font-weight: bold;
 }
 
-/* --- VISUAL VALIDATION --- */
 
-/* Highlights the bar with your teal accent color only if it's empty/invalid on submit */
+
 input:invalid:not(:placeholder-shown),
 select:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
   border: 2px solid #0b4f6c;
 }
 
-/* Subtle focus state so users know which bar they are in without shifting layout */
 input:focus, 
 select:focus, 
 textarea:focus {
@@ -359,20 +383,148 @@ textarea:focus {
 
 @media (max-width: 768px) {
   .contact-main-wrapper {
-    flex-direction: column; /* Stacks the blue side and form side vertically */
+    flex-direction: column; 
   }
 
   .contact-form-side, .contact-image-side {
     width: 100%;
     flex: none;
-    padding: 30px; /* Reduces padding for smaller screens */
+    padding: 30px;
   }
 
   h1.title-back {
-    font-size: 48px; /* Scales down the large header for mobile */
+    font-size: 48px; 
   }
 
   .contact-form {
-    max-width: 100%; /* Allows bars to use full width on phone */
+    max-width: 100%; 
   }
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr;
+    gap: 100px;
+    padding: 0 8% 40px 8% !important; 
+    max-width: 1500px;
+    margin: 0 auto !important;
+    align-items: start;
+}
+
+.media-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: 200px 200px 0 0; 
+    display: block;
+}
+
+.education-video {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    border: 1px solid #0b4f6c; 
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+    padding-top: 80px;
+}
+
+h3 {
+    margin-top: 0;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #f6f7eb;
+}
+
+.personal-background p:first-of-type::first-letter {
+    color: #0b4f6c; 
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Georgia', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr; 
+    gap: 100px; 
+    padding: 40px 5%;
+    align-items: start;
+}
+
+.edu-details p {
+    text-align: left;
+    margin-bottom: 10px;
+    text-indent: 0 !important; 
+    padding-left: 0 !important;
+}
+
+.media-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+    border: 2px solid #0b4f6c;
+}
+
+.caption {
+    text-align: center; 
+    margin-top: 25px; 
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #f6f7eb;
+    width: 100%;
+}
+
+.personal-background p:first-of-type::first-letter {
+    color: #0b4f6c;
+    font-size: 4rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 12px;
+}
+
+.personal-background p {
+    clear: both;
+    order: 1;
+}
+
+.education-section p::first-letter,
+.edu-details p::first-letter {
+    all: unset; 
+    color: #f6f7eb;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    order: 2;
 }
