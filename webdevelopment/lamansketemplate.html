@@ -10,20 +10,25 @@
    <link rel="stylesheet" href="style.css"> 
    <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
     <img src="images/logo.png" alt="Brooke Lamanske Logo">
     <nav>
-        <ul>
+        <!-- Added onclick here -->
+        <div class="hamburger-toggle" onclick="toggleMenu()">☰</div>
+        <!-- Added id here -->
+        <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="Reflections.html">Reflection</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
         </ul>
     </nav> 
 </header>
+
 <section class="hero">
          <!-- Main content area -->
           <h1 class="title-back">MY NAME IS BROOKE</h1>
@@ -52,5 +57,11 @@ green pastures. He leads me beside still waters"</blockquote>
         <span>fakeemail@gmail.com</span>
     </div>
 </footer>
+<script>
+function toggleMenu() {
+    var x = document.getElementById("nav-links");
+    x.classList.toggle("show");
+}
+</script>
     </body>
 </html>

@@ -26,7 +26,7 @@ main {
 }
 
 .hero {
-  padding: 40px;
+  padding: 20px;
   margin-bottom: 20px;
   border: 1px solid rgba(246, 247, 235, 0.2);
 }
@@ -216,7 +216,7 @@ nav {
 }
 
 header img {
-  height: 60px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -525,6 +525,82 @@ h1, h3 {
     all: unset; 
     color: #f6f7eb;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Georgia', sans-serif;
     order: 2;
 }
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5%;
+    position: relative;
+    background-color: #261d0c;
+    gap: 03px;
+}
+
+/* --- 2. THE LINKS (Shared Desktop & Mobile Style) --- */
+#nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex by default for desktop */
+    gap: 15px;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #f6f7eb; /* The cream font color */
+    padding: 10px 20px;
+    background-color: #0b4a6b; /* The blue button color */
+    border-radius: 20px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Hover State: Cream background, Blue font */
+#nav-links li a:hover {
+    background-color: #f6f7eb; 
+    color: #0b4a6b;
+}
+
+/* --- 3. THE TOGGLE --- */
+.hamburger-toggle {
+    display: none; 
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+/* --- 4. MOBILE SPECIFIC (Under 768px) --- */
+@media screen and (max-width: 768px) {
+    .hamburger-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        display: none !important; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #261d0c;
+        padding: 20px 0;
+        align-items: center; /* Centers buttons in the dropdown */
+        z-index: 1000;
+        gap: 15px;
+    }
+
+    #nav-links.show {
+        display: flex !important;
+    }
+}
+#nav-links li a:hover {
+        color: #0b4f6c;
+    }
