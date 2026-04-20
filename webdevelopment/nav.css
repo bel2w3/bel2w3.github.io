@@ -6,6 +6,7 @@ header {
 nav {
     margin-left: 20px;
     color: #f6f7eb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {
@@ -25,7 +26,9 @@ margin-left: 0px 20px
 nav ul li a {
     color: #f6f7eb;
     font-size: 16px;
-    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: 'Georgia', 'Times New Roman', Times, serif sans-serif;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 26px;

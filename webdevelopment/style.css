@@ -41,7 +41,6 @@ h1 {
 }
 
 h3 {
-  color: #f6f7eb;
   font-size: 30px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   margin-top: 30px;
@@ -79,7 +78,7 @@ a {
   background-color: #0b4f6c;
   color: #f6f7eb;
   font-size: 16px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Georgia", 'Times New Roman', Times, serif
   border-radius: 26px;
   display: inline-block;
   text-decoration: none;
@@ -96,7 +95,7 @@ a:hover {
 d1 {
   color: #f6f7eb;
   font-size: 18px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Georgia' 'Times New Roman', Times, serif
 } 
 
 dd {
@@ -134,7 +133,7 @@ p:first-of-type {
 footer {
   color: #f6f7eb;
   font-size: 12px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif
   text-align: center;
   padding: 40px 0;
   margin-top: 100px;
@@ -205,7 +204,7 @@ vertical-align: middle;
   display: inline-block;
   margin: 10px 15px;
   color:#f6f7eb;
-  font-family: 'oswald', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-size: 16px;
 }
 
@@ -213,6 +212,7 @@ nav {
   display: flex;
   gap: 15px;
   margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header img {
@@ -236,7 +236,7 @@ header img {
 
     html, body, main, section, div, h1, h3, p, ul, ol, li, dl, dt, dd, footer {
         display: block !important;
-        font-family: "Times New Roman", Georgia, serif !important;
+        font-family: Georgia, 'Times New Roman', Times, serif
         visibility: visible !important;
     }
 
@@ -262,7 +262,7 @@ header img {
 }
 
 .contact-header {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Georgia' 'Times New Roman', Times, serif
   font-size: 4rem
   font-weight: bold;
   letter-spacing: 0.2em
@@ -290,7 +290,7 @@ header img {
 
 label {
   color: #f6f7eb;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Georgia', sans-serif; 
   font-size: 1.1rem;
   letter-spacing: 0.15em;
   text-transform: capitalize;
@@ -332,7 +332,7 @@ input::placeholder, textarea::placeholder {
   align-self: center; 
   background-color: #0b4f6c;
   color: #f6f7eb;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Georgia', sans-serif; 
   font-weight: bold;
   letter-spacing: 0.2em;
   padding: 15px 50px;
@@ -379,9 +379,7 @@ textarea:focus {
   border-color: #f6f7eb;
 }
 
-/* --- MOBILE RESPONSIVENESS --- */
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-main-wrapper {
     flex-direction: column; 
   }
@@ -461,11 +459,11 @@ h3 {
 }
 
 body {
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 h1, h3 {
-    font-family: 'Georgia', sans-serif; 
+    font-family: 'Georgia', 'Times New Roman', Times, serif; 
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -500,7 +498,7 @@ h1, h3 {
 .caption {
     text-align: center; 
     margin-top: 25px; 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-style: italic;
     color: #f6f7eb;
     width: 100%;
@@ -542,6 +540,7 @@ header {
 /* --- 2. THE LINKS (Shared Desktop & Mobile Style) --- */
 #nav-links {
     list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     display: flex; /* Flex by default for desktop */
@@ -566,6 +565,7 @@ header {
 #nav-links li a:hover {
     background-color: #f6f7eb; 
     color: #0b4a6b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* --- 3. THE TOGGLE --- */
@@ -578,7 +578,7 @@ header {
 }
 
 /* --- 4. MOBILE SPECIFIC (Under 768px) --- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .hamburger-toggle {
         display: block;
     }
@@ -599,8 +599,159 @@ header {
 
     #nav-links.show {
         display: flex !important;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 }
 #nav-links li a:hover {
         color: #0b4f6c;
     }
+
+.artifact-box img {
+    border: none;       /* Removes any solid lines */
+    outline: none;      /* Removes any "glow" or focus boxes */
+    display: block;      /* Prevents tiny gaps at the bottom of the image */
+    width: 100%;        /* Keeps it responsive */
+    height: auto;
+}
+
+/* If you wrapped it in a link, make sure the link doesn't have a border */
+.artifact-box a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: 1.5%;
+}
+
+.artifact-box :hover {
+  transform: scale(1.03);      /* Zooms in by 3% */
+    filter: grayscale(60%);     /* Desaturates the image by 60% */
+    cursor: pointer;
+}
+
+h2 {
+  color: #0b4f6c
+
+}
+
+.teal-button {
+    background-color: #0b4f6c;
+    color: #f6f7eb;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Georgia', sans-serif; 
+    border-radius: 26px;               /* Pill shape restored */
+    display: inline-flex;             /* Prevents the full-width bar */
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    width: fit-content
+}
+.project-entry {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Left side 55%, Right side 45% */
+    gap: 60px;
+    margin-bottom: 70px; 
+    align-items: start; 
+}
+
+/* The Left Column (Title + Image + Button) */
+.visual-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; /* Space between Title -> Image -> Button */
+}
+
+.project-title {
+    color: #f6f7eb; 
+    font-size: 2.5rem;
+}
+
+.project-year {
+    color: #0b4f6c; 
+    font-size: 2.3rem; 
+    margin-left: 10px;
+}
+
+/* The Right Column (Paragraph) */
+.description {
+    align-self: center; /* Vertically centers the text relative to the image */
+}
+
+.description p {
+    text-indent: 30px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.projects-page-title {
+  border: none;
+  box-shadow: none;
+  background: none;
+
+}
+
+/* Targeted override for the Projects page title only */
+.projects-template header,
+.projects-template .title-back,
+.projects-template h1 {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* grid layout here */
+
+/* ... rest of your existing CSS above ... */
+
+/* ... Keep all your existing CSS above the media query ... */
+
+/* Tablets and Phones for Projects Tab */
+@media screen and (max-width: 600px) {
+    .project-entry {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        margin-bottom: 50px;
+        padding: 20px;
+        text-align: center; /* Centers titles and general text */
+    }
+
+    .visual-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the video/still and the button */
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .description p {
+        text-indent: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left; /* Keeps long bio text readable */
+    }
+
+    .artifact-box img, video {
+        width: 100%; /* Ensures video/stills fill the mobile width */
+        max-width: 500px;
+    }
+}
+
+/* Very Small Phones */
+@media screen and (max-width: 480px) {
+    .project-year {
+        display: block; /* Put the year on a new line if the title is long */
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+

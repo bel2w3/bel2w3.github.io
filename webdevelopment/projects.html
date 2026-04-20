@@ -1,21 +1,19 @@
-   <link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="style.css"> 
    <link rel="stylesheet" href="nav.css">
-   <title>Featured Work | Brooke Lamanske</title>
+   <title> Featured Work | Brooke Lamanske</title>
 </head>
 
-<body>
-<header>
-    <img src="logo.png" alt="Brooke Lamanske Logo">
+<body class="projects-template"> <header>
+    <img src="images/logo.png" alt="Brooke Lamanske Logo">
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <div class="hamburger-toggle">☰</div> <ul id="nav-links"> <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li class="dropdown">
                 <a href="projects.html" class="dropdown-toggle">Projects</a>
                 <ul class="dropdown-menu">
-                    <li><a href="project1.html">Seasons</a></li>
-                    <li><a href="project2.html">Timed Poison</a></li>
-                    <li><a href="project3.html">Circles</a></li>
+                    <li><a href="projects.html#seasons">Seasons</a></li>
+                    <li><a href="projects.html#timed-poison">Timed Poison</a></li>
+                    <li><a href="projects.html#circles">Circles</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
@@ -25,16 +23,64 @@
 </header>
 
 <section class="hero">
-         <!-- Main content area -->
-          <h1 class="title-back">Projects</h1>       
-  <footer>
+    <h1 class="title-back" id="projects-page-title">FEATURED WORK</h1>
+</section>
+
+<main>
+    <section id="seasons" class="project-entry">
+        <div class="visual-stack"> <h2 class="project-title">Seasons <span class="project-year">(2026)</span></h2>        
+            <div class="artifact-box">
+                <a href="project1.html">
+                    <img src="images/Seasons Film Still.png" alt="Seasons Feature Film Still">
+                </a>
+            </div>
+            <a href="Seasons.pdf" target="_blank" class="teal-button">OFFICIAL SCRIPT</a>
+        </div>
+
+        <article class="description">
+            <p>This capstone film is a personal exploration of my life as a Christian, the story is shaped by divorce, a complex relationship between father-daughter, and ongoing anxiety with the main character. Through a linear narrative structure, this film reflects on both my testimony, and a source of conviction and struggle. Visually driven, this project uses controlled cinematography, motivated lighting, and expressive editing to mirror internal conflict and moments of grace. Scripted fragments and observational imagery work together to convey emotional truth rather than resolution, presenting faith as a lived experience in life. Knowing we are imperfect, questioning, unique, and deeply human.</p>
+        </article>
+    </section>
+
+    <section id="timed-poison" class="project-entry">
+        <div class="visual-stack">
+            <h2 class="project-title">Timed Poison <span class="project-year">(2025)</span></h2>  
+            <div class="artifact-box">
+                <a href="project2.html">
+                    <img src="images/Timed Poison Film Still.jpeg" alt="Timed Poison Cinematography Demo Still">
+                </a>
+            </div>
+            <a href="Timed Poison Script.pdf" target="_blank" class="teal-button">OFFICIAL SCRIPT</a>
+        </div>
+
+        <article class="description">
+            <p>This project was done for my Cinematography II course, my junior year of college and focuses on applying core visual storytelling principles within a controlled production setting. The film emphasizes script development, motivated lighting, and intentional cinematography all while engaging in stylistic elements related to Romanian New Wave. This project explores how minimalism and realism can shape the emotional tone of a film. This piece for me was a practice in my own career as a producer, and script supervisor. As a whole, this film was a technical exercise with and a stylistic study, allowing me to refine visual discipline while working within the limitations and philosophies of a specific cinematic movement.</p>
+        </article>
+    </section>
+
+    <section id="circles" class="project-entry">
+        <div class="visual-stack">
+            <h2 class="project-title">Circles <span class="project-year">(2024)</span></h2>  
+            <div class="artifact-box">
+                <a href="project3.html">
+                    <img src="images/Circles Film Still.jpeg" alt="Circles Film Still">
+                </a>
+            </div>
+            <a href="Lamanske_CirclesScript_FP1_100124.pdf" target="_blank" class="teal-button">OFFICIAL SCRIPT</a>
+        </div>
+
+        <article class="description"> 
+            <p>This project was done in my junior year of college, and served as a comprehensive introduction to the process of filmmaking. It marked my first experience of writing an original script and translating it from paper to the screen through active directing and collaboration with actors. This project involved a storyboard and a detailed shot list to guide the visual storytelling and production planning. In post-production, the film was edited using Adobe Premiere Pro, allowing me to explore rhythm, pacing, narrative structure, and color grading. Overall, this piece represents my first step in my development as a filmmaker by bringing storytelling, directing, and technical execution into a creative work.</p>
+        </article>
+    </section>
+</main>
+
+<footer>
     <div class="contact-item">
         <img src="images/phone-icon.png" alt="Phone" class="footer-icon">
         <span>(111)-111-1111</span>
     </div>
-
-    <span style="opacity: 0.5;">|</span> <!-- The divider line -->
-
+    <span style="opacity: 0.5;">|</span>
     <div class="contact-item">
         <img src="images/email-icon.png" alt="Email" class="footer-icon">
         <span>fakeemail@gmail.com</span>
