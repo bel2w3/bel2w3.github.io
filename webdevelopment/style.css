@@ -133,7 +133,7 @@ p:first-of-type {
 footer {
   color: #f6f7eb;
   font-size: 12px;
-  font-family: 'Georgia', 'Times New Roman', Times, serif
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   text-align: center;
   padding: 40px 0;
   margin-top: 100px;
@@ -379,7 +379,7 @@ textarea:focus {
   border-color: #f6f7eb;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact-main-wrapper {
     flex-direction: column; 
   }
@@ -578,7 +578,7 @@ header {
 }
 
 /* --- 4. MOBILE SPECIFIC (Under 768px) --- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .hamburger-toggle {
         display: block;
     }
@@ -753,5 +753,56 @@ h2 {
         margin-left: 0;
         font-size: 1.2rem;
     }
+}
+
+table, th, td {
+border-collapse: collapse;
+border-spacing: 12px;
+padding: 10px;
+border: 2px solid #000;
+font-family:  Georgia, 'Times New Roman', Times, serif;
+font-size: 18px;
+
+}
+table {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+th {
+  text-align: left;
+  color: #2280A8;
+  font-size: 21px;
+}
+
+td {
+  color:#f6f7eb;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1a150a; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #261d0c;
+}
+
+figure, figcaption {
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%
+  }
+
+  figure {
+    width: 95%;
+    overflow-x: auto;
+  }
 }
 
