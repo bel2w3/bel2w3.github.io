@@ -18,6 +18,12 @@ figure {
   margin-top: 10px;
 }
 
+.title-back {
+    font-size: 95px; 
+     /* Custom font from Google Fonts applied to site */
+  font-family: "Rye", serif;
+  }
+
 main {
   gap: 80px;
   max-width: 1400px;
@@ -34,17 +40,19 @@ main {
 h1 {
   color: #f6f7eb;
   font-size: 95px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 0;
   margin-bottom: 20px;
   padding-left: 5%;
-}
+  /* Custom font from Google Fonts applied to site */
+  font-family: "Rye", serif; }
+
 
 h3 {
   font-size: 30px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   margin-top: 30px;
   margin-bottom: 10px;
+
 }
 
 p {
@@ -394,6 +402,7 @@ textarea:focus {
 
   h1.title-back {
     font-size: 48px; 
+    font-family: ;
   }
 
   .contact-form {
@@ -632,9 +641,11 @@ header {
 }
 
 h2 {
-  color: #0b4f6c
-
-}
+text-shadow: 5px 5px 0px #070603; /* Your teal color, hard shadow */
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 35px;
+color:#2280A8;
+text-decoration: underline 1px; }
 
 .teal-button {
     background-color: #0b4f6c;
@@ -667,7 +678,7 @@ h2 {
 }
 
 .project-title {
-    color: #f6f7eb; 
+    color: #f6f7eb;
     font-size: 2.5rem;
 }
 
@@ -692,6 +703,7 @@ h2 {
   border: none;
   box-shadow: none;
   background: none;
+  font-family: "Rye", serif;
 
 }
 
@@ -703,8 +715,7 @@ h2 {
     background: transparent !important;
     box-shadow: none !important;
     outline: none !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+    font-family: "Rye", serif;}
 
 /* grid layout here */
 
