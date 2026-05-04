@@ -79,3 +79,77 @@ img {
     background-color:#f6f7eb;
     color: #261d0c;
 }
+
+/* --- MOBILE NAVIGATION --- */
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none !important; /* Keep it hidden until clicked */
+        flex-direction: column !important;
+        background-color: transparent !important; 
+        position: absolute !important;
+        top: 60px !important;
+        right: 0 !important;
+        width: auto !important;
+        min-width: 180px !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+        list-style: none !important;
+        z-index: 9999 !important;
+        align-items: flex-end !important;
+    }
+
+    #nav-links.active {
+        display: flex !important;
+    }
+
+    #nav-links li {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 12px;
+    }
+
+    /* Standard State: Capped Teal Buttons */
+    #nav-links li a {
+        display: inline-block;
+        background-color: #0b4f6c !important; /* Your cinematic teal */
+        color: #f6f7eb !important; /* Your brand cream */
+        padding: 12px 25px;
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: bold;
+        text-decoration: none;
+        font-variant: small-caps;
+        border-radius: 30px 0 0 30px; /* Rounded only on the left */
+        transition: all 0.3s ease-in-out; 
+        white-space: nowrap;
+    }
+
+    /* Hover Animation */
+    #nav-links li a:hover {
+        background-color: #f6f7eb !important;
+        color: #0b4f6c !important;
+        padding-right: 40px; /* The slide-out animation */
+    }
+
+    /* 1. FORCE the desktop horizontal list to disappear */
+    nav ul {
+        display: none !important; 
+        flex-direction: column !important; /* Stack links vertically for mobile */
+    }
+
+    /* 2. FORCE the hamburger icon to be visible and cream-beige */
+    .hamburger-toggle {
+        display: block !important;
+        color: #f6f7eb !important; /* Your brand cream-beige */
+        font-size: 40px !important;
+        cursor: pointer !important;
+        position: absolute !important;
+        right: 20px !important;
+        top: 15px !important;
+        z-index: 10001 !important; /* Ensures it stays on top of everything */
+    }
+
+    /* 3. The "Switch": This only activates when you click the hamburger */
+    #nav-links.active {
+        display: flex !important;
+    }
+}

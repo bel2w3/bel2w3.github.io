@@ -86,7 +86,7 @@ a {
   background-color: #0b4f6c;
   color: #f6f7eb;
   font-size: 16px;
-  font-family: "Georgia", 'Times New Roman', Times, serif
+  font-family: "Georgia", 'Times New Roman', Times, serif;
   border-radius: 26px;
   display: inline-block;
   text-decoration: none;
@@ -103,8 +103,7 @@ a:hover {
 d1 {
   color: #f6f7eb;
   font-size: 18px;
-  font-family: 'Georgia' 'Times New Roman', Times, serif
-} 
+  font-family: 'Georgia' 'Times New Roman', Times, serif; }
 
 dd {
   font-weight: bold;
@@ -246,8 +245,8 @@ header img {
 
     html, body, main, section, div, h1, h3, p, ul, ol, li, dl, dt, dd, footer {
         display: block !important;
-        font-family: Georgia, 'Times New Roman', Times, serif
-        visibility: visible !important;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        visibility: visible !important
     }
 
     @page {
@@ -264,20 +263,20 @@ header img {
 }
 
 .contact-block {
-  background-color:#261d0c
-  color:#f6f7eb
+  background-color:#261d0c;
+  color: #f6f7eb;
   max-width: 400px;
   margin: 60px auto;
-  padding: 40px
+  padding: 40px;
 }
 
 .contact-header {
-  font-family: 'Georgia' 'Times New Roman', Times, serif
-  font-size: 4rem
+font-family: 'Georgia' 'Times New Roman', Times, serif;
+  font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 0.2em
-  text-transform:: uppercase;
-  text-align left;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: left;
   margin-bottom: 40px;
 }
 
@@ -402,7 +401,7 @@ textarea:focus {
 
   h1.title-back {
     font-size: 48px; 
-    font-family: ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
   .contact-form {
@@ -588,31 +587,6 @@ header {
     margin-left: auto; 
 }
 
-/* --- 4. MOBILE SPECIFIC (Under 768px) --- */
-@media screen and (max-width: 768px) {
-    .hamburger-toggle {
-        display: block;
-    }
-
-    #nav-links {
-        display: none !important; 
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #261d0c;
-        padding: 20px 0;
-        align-items: center; /* Centers buttons in the dropdown */
-        z-index: 1000;
-        gap: 15px;
-    }
-
-    #nav-links.show {
-        display: flex !important;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-}
 #nav-links li a:hover {
         color: #0b4f6c;
     }
@@ -819,3 +793,294 @@ figure, figcaption {
   }
 }
 
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 5%;
+    max-width: 1500px; /* Increased to allow more horizontal spread */
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+photo-box {
+    flex-shrink: 0;
+    width: 340px;
+    height: 460px;
+    border: 1.5px solid #0b4f6c; /* Your teal accent */
+    overflow: hidden; /* Clips the image to the border */
+    margin-right: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.split-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.line-one {
+    font-family: 'Rye', serif;
+    font-size: 5.5rem; /* Larger to fill space */
+    color: #f6f7eb;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.line-two {
+    font-family: 'Rye', serif;
+    font-size: 7.5rem; /* Larger and stretched across the right */
+    color: #f6f7eb;
+    align-self: flex-end;
+    margin: 10px 0 0 0; 
+    line-height: 0.9;
+    text-align: right;
+}
+
+.hero-text-and-actions {
+    max-width: 550px;
+    margin-left: 60px; /* Aligns text under the 'M' of My Name */
+}
+
+.body-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.hero-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pill-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0b4f6c;
+    background: transparent;
+    border-radius: 40px;
+    padding: 10px 25px;
+    width: 320px;
+    text-decoration: none;
+    color: #f6f7eb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+/* The "Slanted" staggered look */
+.pill-button.secondary {
+    margin-left: 80px; /* Pushes the second button further right */
+}
+
+.pill-button:hover {
+    background-color: #f6f7eb;
+    color: #0b4f6c;
+}
+
+.photo-box {
+    width: 340px; 
+    height: 460px;
+    border: 1.5px solid #0b4f6c; /* Your preferred teal accent */
+    overflow: hidden; /* This keeps the image inside the borders */
+    display: block;
+}
+
+/* This forces the image to fill the box */
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fills the frame perfectly */
+    display: block;
+}
+
+.frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the key: it fills the box without stretching */
+    object-position: center; /* Centers your face in the frame */
+}
+
+.bible-verse {
+    font-family: 'Poppins', sans-serif;
+    color: #f6f7eb; /* Cream-beige text */
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.verse-reference {
+    font-family: 'Oswald', sans-serif; /* Your heading font */
+    color: #0b4f6c; /* Teal for the reference */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    font-style: normal;
+}
+
+/* Adjustments for the staggered buttons */
+.pill-button.secondary {
+    margin-left: 100px; /* Stronger stagger for that slanted look */
+}
+
+/* This removes the brown gaps between the sub-items */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0b4f6c; /* Matches your teal buttons */
+    list-style: none;
+    padding: 0; /* Removes internal spacing */
+    margin: 0;
+    border-radius: 0 0 15px 15px; 
+    gap: 0 !important; /* Forces the gap to 0 */
+    min-width: 180px;
+    z-index: 3000;
+}
+
+/* Removes margins from the list items themselves */
+.dropdown-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Makes the links fill the whole teal box */
+.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    background: transparent !important; /* Removes individual button backgrounds */
+    border-radius: 0;
+    padding: 12px 20px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f6f7eb !important;
+    color: #0b4f6c !important;
+}
+
+@media screen and (max-width: 768px) {
+    /* 1. Stack the layout vertically */
+    .hero-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    /* 2. Center the photo and adjust size */
+    .photo-box {
+        width: 280px; /* Slightly smaller for mobile */
+        height: 380px;
+        margin: 0 auto 30px auto; /* Centers and adds space below */
+    }
+
+    /* 3. Adjust that massive typography */
+    .line-one, .line-two {
+        font-size: 3.5rem !important; /* Scale down so it fits */
+        text-align: center;
+        align-self: center;
+        line-height: 1.1;
+    }
+
+    .hero-text-and-actions {
+        margin-left: 0; /* Remove the desktop stagger */
+        max-width: 100%;
+    }
+
+    /* 4. Center the body text and buttons */
+    .body-text {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-links {
+        align-items: center; /* Centers the pill buttons */
+    }
+
+    .pill-button {
+        width: 100%; /* Full width buttons are easier to tap */
+        max-width: 300px;
+        margin-left: 0 !important; /* Removes the slanted/staggered look */
+    }
+
+    /* 5. Handle the footer verse */
+    .bible-verse {
+        font-size: 0.95rem;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    /* 2. Home Page Mobile Code */
+    .hero-container { ... }
+    .line-one, .line-two { ... }
+
+    /* 3. About Page Mobile Code (Paste the new code here!) */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* 1. Remove the box/border from the container */
+  .reflection-container, [class*="reflection"] {
+        border: none !important;
+        background: transparent !important;
+        padding: 20px 5% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        display: block !important; /* Changes from flex to block for easier centering */
+        text-align: center !important;
+    }
+
+       .reflection-container h3, h3, .reflection-container a {
+        font-family: 'Poppins';
+        font-size: 40px;
+        text-shadow: 5px 5px 0px #070603; /* Your teal color, hard shadow */
+        text-align: center !important;
+        display: block !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+        margin: 30px 0 10px 0 !important;
+    }
+
+    /* 2. Remove underlines from "Seasons" and "Timed Poison" */
+   .reflection-container h2, h2, .reflection-container a {
+        font-family: 'Poppins';
+        font-size: 50px;
+        text-align: center !important;
+        display: block !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+        margin: 30px 0 10px 0 !important;
+    }
+    /* 3. Ensure the main REFLECTION title also has no underline */
+  .reflection-container h1, h1 {
+        font-family: 'Rye', serif !important; /* Note: Rye is a serif font */
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+        margin: 20px 0 !important;
+    }
+
+    .reflection-container p, p {
+        text-align: center !important;
+        font-family: 'Georgia' sans-serif !important;
+        line-height: 1.8 !important;
+        margin-bottom: 30px !important;
+        display: block !important;
+    }
+}
+
+/* <--- MAKE SURE THIS FINAL BRACKET IS ALWAYS AT THE VERY END
